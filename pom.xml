@@ -39,6 +39,11 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.27</version>
+    </dependency>
 
     <build>
         <plugins>
