@@ -42,11 +42,11 @@
                                                <Insets bottom="30.0" />
                                            </VBox.margin>
                                        </HBox>
-                                       <TableView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                       <TableView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" fx:id="szobrokTV">
                                            <columns>
-                                               <TableColumn prefWidth="255.0" text="Személy" />
-                                               <TableColumn prefWidth="255.0" text="Magasság" />
-                                               <TableColumn prefWidth="255.0" text="Ár" />
+                                               <TableColumn prefWidth="255.0" text="Személy" fx:id="colSzoborSzemely"/>
+                                               <TableColumn prefWidth="255.0" text="Magasság" fx:id="colSzoborMagassag"/>
+                                               <TableColumn prefWidth="255.0" text="Ár" fx:id="colSzoborAr"/>
                                            </columns>
                                        </TableView>
                                    </children>
@@ -82,11 +82,11 @@
                                                <Insets bottom="30.0" />
                                            </VBox.margin>
                                        </HBox>
-                                       <TableView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                       <TableView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" fx:id="festmenyTV">
                                            <columns>
-                                               <TableColumn prefWidth="255.0" text="Cím" />
-                                               <TableColumn prefWidth="255.0" text="Év" />
-                                               <TableColumn prefWidth="255.0" text="Kiállítva" />
+                                               <TableColumn prefWidth="255.0" text="Cím" fx:id="colFestmenyCim"/>
+                                               <TableColumn prefWidth="255.0" text="Év" fx:id="colFestmenyEv"/>
+                                               <TableColumn prefWidth="255.0" text="Kiállítva" fx:id="colFestmenyKiallit"/>
                                            </columns>
                                        </TableView>
                                    </children>
