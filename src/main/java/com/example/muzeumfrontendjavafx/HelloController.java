@@ -2,13 +2,14 @@ package com.example.muzeumfrontendjavafx;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 
 public class HelloController {
     @FXML
-    private Label welcomeText;
-
+    private TableView szobrokTV;
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
-    }
+    private TableView festmenyTV;
+    @FXML
+    private TableColumn colSzoborSzemely, colSzoborMagassag, colSzoborAr, colFestmenyCim, colFestmenyEv, colFestmenyKiallit;
 }
