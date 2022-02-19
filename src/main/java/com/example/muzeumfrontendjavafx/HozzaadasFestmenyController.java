@@ -1,4 +1,4 @@
 package com.example.muzeumfrontendjavafx;
 
-public class HozzaadasFestmenyController {
+public class HozzaadasFestmenyController extends Controller{
 }
