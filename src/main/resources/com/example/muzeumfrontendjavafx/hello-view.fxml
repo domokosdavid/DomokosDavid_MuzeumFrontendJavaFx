@@ -22,17 +22,17 @@
                                    <children>
                                        <HBox alignment="CENTER">
                                            <children>
-                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Hozzáadás">
+                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Hozzáadás" onAction="#onSzoborHozzaadButtonClick">
                                                    <HBox.margin>
                                                        <Insets left="25.0" right="25.0" />
                                                    </HBox.margin>
                                                </Button>
-                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Törlés">
+                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Törlés" onAction="#onSzoborTorlesButtonClick">
                                                    <HBox.margin>
                                                        <Insets left="25.0" right="25.0" />
                                                    </HBox.margin>
                                                </Button>
-                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Módosítás">
+                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Módosítás" onAction="#onSzoborModositasButtonClick">
                                                    <HBox.margin>
                                                        <Insets left="25.0" right="25.0" />
                                                    </HBox.margin>
@@ -62,17 +62,17 @@
                                    <children>
                                        <HBox alignment="CENTER">
                                            <children>
-                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Hozzáadás">
+                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Hozzáadás" onAction="#onFestmenyHozzaadButtonClick">
                                                    <HBox.margin>
                                                        <Insets left="25.0" right="25.0" />
                                                    </HBox.margin>
                                                </Button>
-                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Törlés">
+                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Törlés" onAction="#onFestmenyTorlesButtonClick">
                                                    <HBox.margin>
                                                        <Insets left="25.0" right="25.0" />
                                                    </HBox.margin>
                                                </Button>
-                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Módosítás">
+                                               <Button mnemonicParsing="false"  prefHeight="30.0" prefWidth="150.0" text="Módosítás" onAction="#onFestmenyModositasButtonClick">
                                                    <HBox.margin>
                                                        <Insets left="25.0" right="25.0" />
                                                    </HBox.margin>
