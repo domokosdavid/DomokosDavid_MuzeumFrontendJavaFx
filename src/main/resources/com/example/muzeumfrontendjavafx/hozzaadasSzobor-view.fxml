@@ -18,17 +18,17 @@
         <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
     </rowConstraints>
     <children>
-        <TextField promptText="Személy" GridPane.columnIndex="1"/>
+        <TextField promptText="Személy" GridPane.columnIndex="1" fx:id="inputSzemely"/>
         <Label text="Személy" />
         <Label text="Magasság" GridPane.rowIndex="1" />
         <Label text="Ár" GridPane.rowIndex="2" />
-        <Spinner editable="true"  minWidth="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2">
+        <Spinner editable="true"  minWidth="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" fx:id="inputAr">
             <valueFactory>
                 <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="10" max="999999999"  min="1" />
             </valueFactory>
         </Spinner>
-        <Button minWidth="100.0" mnemonicParsing="false" prefWidth="200.0" text="Hozzáad" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
-        <Spinner editable="true" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" >
+        <Button minWidth="100.0" mnemonicParsing="false" prefWidth="200.0" text="Hozzáad" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" onAction="#buttonHozzaad"/>
+        <Spinner editable="true" prefHeight="25.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="inputMagassag">
             <valueFactory>
                 <SpinnerValueFactory.IntegerSpinnerValueFactory amountToStepBy="10" max="99999999"  min="1" />
             </valueFactory>
