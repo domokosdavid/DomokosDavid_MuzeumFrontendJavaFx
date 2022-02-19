@@ -13,6 +13,6 @@ public class HozzaadasSzoborController{
 
     @FXML
     public void buttonHozzaad(ActionEvent actionEvent) {
-
+        
     }
 }
