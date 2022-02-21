@@ -12,7 +12,7 @@ import java.util.Optional;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Controller {
+public abstract class Controller {
     protected Stage stage;
 
     public Stage getStage() {

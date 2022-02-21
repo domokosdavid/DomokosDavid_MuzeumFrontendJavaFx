@@ -13,11 +13,21 @@ import java.util.List;
 
 public class HelloController extends Controller {
     @FXML
-    private TableView szobrokTV;
+    public TableView szobrokTV;
     @FXML
-    private TableView festmenyTV;
+    public TableView festmenyTV;
     @FXML
-    private TableColumn colSzoborSzemely, colSzoborMagassag, colSzoborAr, colFestmenyCim, colFestmenyEv, colFestmenyKiallit;
+    public TableColumn<Szobor, String> colSzoborSzemely;
+    @FXML
+    public TableColumn<Szobor, Integer> colSzoborMagassag;
+    @FXML
+    public TableColumn<Szobor, Integer> colSzoborAr;
+    @FXML
+    public TableColumn<Festmeny, String> colFestmenyCim;
+    @FXML
+    public TableColumn<Festmeny, Integer> colFestmenyEv;
+    @FXML
+    public TableColumn<Festmeny, Boolean> colFestmenyKiallit;
 
     public void initialize() {
         colSzoborSzemely.setCellValueFactory(new PropertyValueFactory<>("person"));
