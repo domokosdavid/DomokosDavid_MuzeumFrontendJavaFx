@@ -1,21 +1,33 @@
-package com.example.muzeumfrontendjavafx;
+package com.example.muzeumfrontendjavafx.controllers;
 
+import com.example.muzeumfrontendjavafx.Controller;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.io.IOException;
 import java.util.List;
 
-public class HelloController extends Controller{
+public class HelloController extends Controller {
     @FXML
     private TableView szobrokTV;
     @FXML
     private TableView festmenyTV;
     @FXML
     private TableColumn colSzoborSzemely, colSzoborMagassag, colSzoborAr, colFestmenyCim, colFestmenyEv, colFestmenyKiallit;
+
+    public void initialize() {
+        colSzoborSzemely.setCellValueFactory(new PropertyValueFactory<>("person"));
+        colSzoborMagassag.setCellValueFactory(new PropertyValueFactory<>("height"));
+        colSzoborAr.setCellValueFactory(new PropertyValueFactory<>("price"));
+        colFestmenyCim.setCellValueFactory(new PropertyValueFactory<>("title"));
+        colFestmenyEv.setCellValueFactory(new PropertyValueFactory<>("year"));
+        colFestmenyKiallit.setCellValueFactory(new PropertyValueFactory<>("on_display"));
+        szoborListaFeltolt();
+    }
 
     public void onSzoborHozzaadButtonClick(ActionEvent actionEvent) {
         try {
