@@ -2,16 +2,15 @@ package com.example.muzeumfrontendjavafx;
 
 public class Szobor {
     private int id;
-    private String szemely;
-    private int magassag;
-    private int ar;
+    private String person;
+    private int height;
+    private int price;
 
-
-    public Szobor(int id, String szemely, int magassag, int ar) {
+    public Szobor(int id, String person, int height, int price) {
         this.id = id;
-        this.szemely = szemely;
-        this.magassag = magassag;
-        this.ar = ar;
+        this.person = person;
+        this.height = height;
+        this.price = price;
     }
 
     public int getId() {
@@ -22,27 +21,27 @@ public class Szobor {
         this.id = id;
     }
 
-    public String getSzemely() {
-        return szemely;
+    public String getPerson() {
+        return person;
     }
 
-    public void setSzemely(String szemely) {
-        this.szemely = szemely;
+    public void setPerson(String person) {
+        this.person = person;
     }
 
-    public int getMagassag() {
-        return magassag;
+    public int getHeight() {
+        return height;
     }
 
-    public void setMagassag(int magassag) {
-        this.magassag = magassag;
+    public void setHeight(int height) {
+        this.height = height;
     }
 
-    public int getAr() {
-        return ar;
+    public int getPrice() {
+        return price;
     }
 
-    public void setAr(int ar) {
-        this.ar = ar;
+    public void setPrice(int price) {
+        this.price = price;
     }
 }
